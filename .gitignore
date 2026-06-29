@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+/dist
+/build
+
+# Variables de entorno y llaves
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
