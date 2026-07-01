@@ -2,6 +2,8 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { GeoModule } from './geo/geo.module';
+import { VoluntariosModule } from './voluntarios/voluntarios.module';
+import { EspecialidadesModule } from './especialidades/especialidades.module';
 
 @Module({
   imports: [
@@ -27,6 +29,10 @@ import { GeoModule } from './geo/geo.module';
     }),
 
     GeoModule,
+
+    VoluntariosModule,
+
+    EspecialidadesModule,
   ],
 })
 export class AppModule {}
