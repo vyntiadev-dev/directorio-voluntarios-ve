@@ -13,12 +13,10 @@ async function bootstrap() {
     }),
   );
 
-  app.enableCors({
-    origin: '*',
-  });
+  app.enableCors({ origin: '*' });
 
-  const puerto = process.env.PORT ?? 3000;
-  await app.listen(puerto);
+  const puerto = process.env.PORT || 3000;
+  await app.listen(puerto, '0.0.0.0');
   console.log(`🚀 Servidor corriendo en puerto ${puerto}`);
 }
 bootstrap();
